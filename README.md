@@ -1,5 +1,13 @@
 # react-tick
-Countdown timer for React
+> Countdown timer for React
+
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
+
+[![react-tick](https://nodei.co/npm/react-tick.png)](https://npmjs.org/package/react-tick)
+
+[npm-url]: https://npmjs.org/package/react-tick
+[downloads-image]: http://img.shields.io/npm/dm/react-tick.svg
+[npm-image]: http://img.shields.io/npm/v/react-tick.svg
 
 # Installation
 
@@ -55,7 +63,7 @@ End time. The time format should be `yyyy/MM/dd hh:mm:ss` like `2012/12/31 23:59
 
 ### onTimeUp
 
-A function to be executed when time is up.
+A function will be executed when time is up.
 
 # License
 
