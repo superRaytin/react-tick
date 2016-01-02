@@ -15,42 +15,26 @@
 npm install react-tick
 ```
 
-# Quick Start
-
-```html
-<div id="__react_content"></div>
-```
+# Usage
 
 ```js
 var React = require('react');
 var Tick = require('react-tick');
-
-var Container = React.createClass({
-    render: function () {
-        var onTimeUp = function () {
-            console.log('Time is up!');
-        };
-
-        return (
-            <div class="container">
-                <div>hello world!</div>
-                <Tick
-                    format="remain: {dd} days {hh} hours {mm} minutes {ss} seconds"
-                    endTime="2015/12/31 23:59:59"
-                    onTimeUp={onTimeUp} />
-            </div>
-        );
-    }
-});
-
-React.render(<Container />, document.getElementById('__react_content'));
+var ReactDOM = require('react-dom');
+ReactDOM.render(
+    <Tick
+        format="remain: {dd} days {hh} hours {mm} minutes {ss} seconds"
+        endTime="2015/12/31 23:59:59"
+        onTimeUp={onTimeUp} />,
+    container
+);
 ```
 
 # Manifest
 
 ### format
 
-Used to format the display string with some variables. HTML tag is supported.
+A string used to format the display string with some variables. HTML tags is supported.
 
 - **dd** remain days.
 - **hh** remain hours.
