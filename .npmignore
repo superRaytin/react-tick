@@ -5,5 +5,4 @@ node_modules/
 dist/
 example/
 test/
-gulpfile.js
 bower.json
