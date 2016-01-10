@@ -26,7 +26,7 @@ ReactDOM.render(
         format="remain: {dd} days {hh} hours {mm} minutes {ss} seconds"
         endTime="2015/12/31 23:59:59"
         onTimeUp={onTimeUp} />,
-    container
+    mountNode
 );
 ```
 
@@ -43,7 +43,7 @@ A string used to format the display string with some variables. HTML tags is sup
 
 ### endTime
 
-End time. The time format should be `yyyy/MM/dd hh:mm:ss` like `2012/12/31 23:59:59`.
+A string to indicate end time, the time format should be `yyyy/MM/dd hh:mm:ss` like `2012/12/31 23:59:59`.
 
 ### onTimeUp
 
